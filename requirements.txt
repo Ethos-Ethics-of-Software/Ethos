@@ -1,0 +1,6 @@
+networkx
+pysinonimos==0.1.1
+matplotlib
+stackapi
+nltk==3.5
+scikit-learn
