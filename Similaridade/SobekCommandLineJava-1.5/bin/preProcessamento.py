@@ -72,7 +72,7 @@ class PreProcessamento:
         return contador
 
     @classmethod
-    def frequenciaGrafoComentario(cls, grafo):
+    def frequenciaGrafo(cls, grafo):
         contador = 0.0
         nosGrafo = list(grafo.nodes)
 
