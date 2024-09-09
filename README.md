@@ -49,4 +49,4 @@ Após isso, no terminal digite o seguinte comando para executar a aplicação:
 ```
 python3 main.py "Texto1.txt,Texto2.txt"
 ```
-Sendo "Texto1.txt" e "Texto2.txt" o nome dos arquivos de texto a serem comparados 
+Sendo "Texto1.txt" e "Texto2.txt" o nome dos arquivos de texto a serem comparados, e eles precisam estar na pasta em Similaridade/Textos.
