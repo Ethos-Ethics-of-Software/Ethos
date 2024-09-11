@@ -1,0 +1,3 @@
+Unit testing involves testing individual components or functions of a software application in isolation to ensure they work as intended.
+Each unit test targets a small, specific part of the code (like a function or method) and is designed to validate that this part produces the correct output for a given input.
+Unit tests help identify and fix bugs early in the development process and ensure that each part of the software functions correctly on its own.

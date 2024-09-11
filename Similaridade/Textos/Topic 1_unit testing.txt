@@ -1,0 +1,12 @@
+Unit test: testing of an individual module or independent component in an application is known to be unit testing. The unit testing will be done by the developer.
+The tool set will depend largely on the codebase, but there are many open source tools for unit testing (JUnit)
+Unit testing frameworks such as JUnit and NUnit (for java), MSTest (for C# and .NET) and Jasmine/Mocha (for JavaScript) are used for this purpose.
+Unit testing: It is a white box testing. Only developers involve in it
+Unit testing is directed at the smallest part of the implementation possible. In Java this means you are testing a single class. If the class depends on other classes these are faked.
+Unit Testing
+Unit testing is usually done by the developers side, whereas testers are partly evolved in this type of testing where testing is done unit by unit. In Java JUnit test cases can also be possible to test whether the written code is perfectly designed or not.
+Unit Testing: It always performs by developer after their development done to find out issue from their testing side before they make any requirement ready for QA.
+Unit testing is the only form of white box testing here. The others are black box testing. White box testing means that you know the input; you know the inner workings of the mechanism and can inspect it and you know the output. With black box testing you only know what the input is and what the output should be.
+So clearly unit testing is the only white box testing here.
+Unit testing test specific pieces of code. Usually methods.
+Unit testing is not necessarily white-box. Some of the best unit tests I've seen are essentially examples drawn from the requirements, specifying expected results independently from any implementation concepts.
