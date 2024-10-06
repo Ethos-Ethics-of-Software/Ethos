@@ -33,7 +33,7 @@ pip3 install -r requirements.txt
 Além disso, a biblioteca [NLTK](https://www.nltk.org/) necessita de instalar externamente alguns itens, bastando executar o arquivo ```nltkmodule.py``` como mostrado abaixo.
 
 ```
-python3 ntlkmodules.py
+python3 nltkmodules.py
 ```
 
 ## **Como Executar**
@@ -49,4 +49,4 @@ Após isso, no terminal digite o seguinte comando para executar a aplicação:
 ```
 python3 main.py "Texto1.txt,Texto2.txt"
 ```
-Sendo "Texto1.txt" e "Texto2.txt" o nome dos arquivos de texto a serem comparados, e eles precisam estar na pasta em Similaridade/Textos.
+Sendo "Texto1.txt" e "Texto2.txt" o nome dos arquivos de texto a serem comparados, e eles precisam estar na pasta localizada em Similaridade/Textos.
