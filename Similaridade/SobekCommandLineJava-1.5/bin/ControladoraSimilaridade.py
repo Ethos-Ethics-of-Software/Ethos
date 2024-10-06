@@ -31,10 +31,8 @@ class ControladoraSimilaridade:
             
             if(exebirGrafos == 1):
                 nx.draw(texto1, with_labels=True, font_weight='bold')
-                plt.title("Texto 1")
                 plt.show()
                 nx.draw(texto2, with_labels=True, font_weight='bold')
-                plt.title("Texto 2")
                 plt.show()
             
             similaridade = SimilaridadeGrafos.simGrafos(texto1, texto2, idioma)
