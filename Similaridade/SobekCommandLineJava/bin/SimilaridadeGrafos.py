@@ -2,7 +2,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-from preProcessamento import PreProcessamento
+from Similaridade.SobekCommandLineJava.bin.preProcessamento import PreProcessamento
 
 class SimilaridadeGrafos:
     @classmethod

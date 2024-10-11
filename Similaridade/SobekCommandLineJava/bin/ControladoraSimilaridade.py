@@ -1,6 +1,6 @@
-from SimilaridadeCossenos import SimilaridadeCossenos
-from SimilaridadeGrafos import SimilaridadeGrafos
-from controladoraSOBEK import ControladoraSOBEK
+from Similaridade.SobekCommandLineJava.bin.SimilaridadeCossenos import SimilaridadeCossenos
+from Similaridade.SobekCommandLineJava.bin.SimilaridadeGrafos import SimilaridadeGrafos
+from Similaridade.SobekCommandLineJava.bin.controladoraSOBEK import ControladoraSOBEK
 import networkx as nx
 import matplotlib.pyplot as plt
 

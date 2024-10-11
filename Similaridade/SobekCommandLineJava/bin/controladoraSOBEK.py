@@ -13,7 +13,7 @@ from nltk.tokenize import word_tokenize
 # Biblioteca para remover pontuação
 import string
 
-from preProcessamento import PreProcessamento
+from Similaridade.SobekCommandLineJava.bin.preProcessamento import PreProcessamento
 
 class ControladoraSOBEK:
     # Verificamos se o SOBEK retorna um grafo vazio, se sim, iremos gerar
