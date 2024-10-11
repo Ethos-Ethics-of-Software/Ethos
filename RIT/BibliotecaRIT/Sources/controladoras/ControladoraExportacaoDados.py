@@ -1,4 +1,5 @@
 import csv
+import os
 from RIT.BibliotecaRIT.Sources.entidades.Projeto import Projeto
 from RIT.BibliotecaRIT.Sources.entidades.Topico import Topico
 from RIT.BibliotecaRIT.Sources.estrategias.exportacao.VisaoRelevanciaTematicaPorStatus import VisaoRelevanciaTematicaPorStatus
@@ -16,17 +17,19 @@ class ControladoraExportacaoDados:
     def gerarCSVs(cls, projeto:Projeto, visao, numPagina, arg):
         operacao = 'w' if numPagina == 1 else 'a'
         
-        fileComentario = open(projeto.repositorio+"-comentarios-"+str(visao)+'.csv', operacao, encoding='utf-8')
+        if not os.path.exists('out'):
+            os.makedirs('out')
+        
+        fileComentario = open('out/'+projeto.repositorio+"-comentarios-"+str(visao)+'.csv', operacao, encoding='utf-8')
         csvFileComentarios = csv.writer(fileComentario,escapechar="\\")
         
-        fileIssues = open(projeto.repositorio+"-issues-"+str(visao)+'.csv', operacao, encoding='utf-8')
+        fileIssues = open('out/'+projeto.repositorio+"-issues-"+str(visao)+'.csv', operacao, encoding='utf-8')
         csvFileIssues = csv.writer(fileIssues,escapechar="\\")
 
         # Gravando a Linha com o Título das Colunas
         if numPagina == 1:
             csvFileIssues.writerow(['NumeroIssue','IdIssue', 'TituloIssue', 'DescricaoIssue', 'CriacaoIssue','RepositorioIssue','LinkIssue'])
-            csvFileComentarios.writerow(['IdIssue','NumeroComentario','Comentario', 'DataComentario', 
-                                         'RelevanciaTematica', 'AutorComentario','Tags'])
+            csvFileComentarios.writerow(['IdIssue','NumeroComentario','Comentario', 'DataComentario','AutorComentario','Tags'])
         # Gravando as Linhas
         for topico in projeto.topicos:
             if len(topico.listaComentarios)!=0:
