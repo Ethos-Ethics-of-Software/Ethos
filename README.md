@@ -69,6 +69,5 @@ No menu é necessário fornecer os seguintes dados:
 * 1 para filtrar por comentários de _issues_ abertas
 * 2 para filtrar por comentários de _issues_ fechadas
 * 3 para filtrar por comentários de _issues_ abertas e fechadas
-Caso não seja especificada nenhuma visão, esta será utilizada.
 * 4 para filtrar comentários por  autor, tanto para issues abertas quanto  fechadas
 * 5 para filtrar comentários por  data, para issues abertas e fechadas
