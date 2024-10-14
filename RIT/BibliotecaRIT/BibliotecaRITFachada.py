@@ -16,7 +16,7 @@ class BibliotecaRITFachada:
         Requisicao.init_tokens(tokens=tokens)
     
     @classmethod
-    def extrairDadosGitHub(cls,usuario, repositorio, visao=3, arg="", pagInicial=1):
+    def extrairDadosGitHub(cls,usuario, repositorio, visao, arg, pagInicial):
 
         tipoIssue = visao if visao < 4 else 3
         ControladoraExtracaoDados.setFiltroExtracaoPorTipoIssue(tipoIssue)

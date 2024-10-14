@@ -36,7 +36,7 @@ else:
 
     visao = int(input("Digite a visão a ser usada: "))
     pagina = int(input("Digite a página inicial: "))
-
+    
     if(visao == 4):
         arg = input("Digite o nome do Autor: ")
         BibliotecaRITFachada.extrairDadosGitHub(usuario, repositorio, visao, arg, pagina)
@@ -44,4 +44,4 @@ else:
         arg = input("Digite a data (yyyy-mm-dd): ")
         BibliotecaRITFachada.extrairDadosGitHub(usuario, repositorio, visao, arg, pagina)
 
-    BibliotecaRITFachada.extrairDadosGitHub(usuario, repositorio, visao, pagina)
+    BibliotecaRITFachada.extrairDadosGitHub(usuario, repositorio, visao,"", pagina)
