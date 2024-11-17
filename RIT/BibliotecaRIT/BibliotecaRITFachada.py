@@ -29,7 +29,7 @@ class BibliotecaRITFachada:
             projetoPreProcessado = cls.__preProcessarProjeto(projeto)
      
             print(f'-- Exportando dados da página {i}/{qtdPaginas} do repositório {repositorio} --')
-            cls.__gerarCSVGitHub(projeto, visao, i, arg)
+            cls.__gerarCSVGitHub(projetoPreProcessado, visao, i, arg)
             
             print('\033[92m' + f'Página {i}/{qtdPaginas} do repositório {repositorio} finalizada' + '\033[0m')
             print()
