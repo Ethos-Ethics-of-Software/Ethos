@@ -1,7 +1,7 @@
 # **Ethos**
 
 Repositório dedicado a implementação de métodos para auxiliar as pesquisas do Projeto Ethos, mantido pelo Núcleo de Pesquisa em Engenharia de Software Social e Colaborativa [NuPESSC](http://nupessc.caf.ufv.br/).  
-Atualmente possui um recorte da BibliotecaRIT, contendo um método para extração de dados de issues do GitHub.
+Atualmente possui um recorte da BibliotecaRIT, contendo um método para extração de dados de Issues do GitHub, e arquivos .ipynb para análise de problemas éticos e contagem de substantivos em comentários de Issues de repositórios do GitHub.
 
 ## **Configuração**
 
