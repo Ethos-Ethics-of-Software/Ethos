@@ -20,11 +20,18 @@ class ControladoraExtracaoDados:
            cls._filtroExtracao =FiltroExtracaoIssuesAbertasFechadas
     
     @classmethod
-    def numeroPaginas(cls,usuario, repositorio):
-        url = cls._filtroExtracao.urlNumeroPaginas(usuario,repositorio)
+    def numeroPaginas(cls, usuario, repositorio):
+        url = cls._filtroExtracao.urlNumeroPaginas(usuario, repositorio)
         response = cls._requisicao.request(url=url)
-        if response.links.keys():
+
+        if "last" in response.links:
             return int(response.links['last']['url'].partition("&page=")[-1])
+        elif "next" in response.links:
+            paginas = 1
+            while "next" in response.links:
+                paginas += 1
+                response = cls._requisicao.request(url=response.links["next"]["url"])
+            return paginas
         else:
             return 1
     
